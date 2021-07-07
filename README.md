@@ -20,10 +20,10 @@
 
 <img width="480" src="https://i.imgur.com/3xWIHWZ.png"> 
 
-> **FILE:** 03_FetchNGraphCSVFile <br>
-> **SRC DATA:** https://data.giss.nasa.gov/gistemp/ <br>
-- **Description:** *Downloading a CSV Tabular Data of the "Combined Global Land-Surface Air and Sea-Surface Water Temperature" from NASA and manually Parsing the Data after fetching it.<br> 
-Charting the Data into a Canvas in HTML5 with Chart.js library and then customizing a little.*<br>
-- **Technology:** **JavaScript, Canvas.js, HTML.**
+> **FILE:** <i>03_FetchNGraphCSVFile</i> <br>
+> **SRC DATA:** <i>https://data.giss.nasa.gov/gistemp/</i> <br>
+- **Description:** Downloading a **CSV Tabular Data** of the <i>"Combined Global Land-Surface Air and Sea-Surface Water Temperature"</i> from **NASA** and manually <i>Parsing</i> the <i>Data</i> after fetching it.<br> 
+**Charting the Data into a Canvas in HTML5 with Chart.js** library and then customizing a little.<br><br>
+- **Used:** <i>JavaScript, Canvas.js, HTML</i>.
   
 
