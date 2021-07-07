@@ -5,14 +5,30 @@ async function charIt() {
   const myChart = new Chart(ctx, {
     type: 'line',
     data: {
-      labels: data.xs,
+      labels: data.years,
       datasets: [
         {
-          label: 'Combined Land-Surface Air and Sea-Surface Water Temperature in C°',
-          data: data.ys,
+          label: 'Global Temperature in °C°',
+          data: data.temps,
           fill: false,
-          backgroundColor: ['rgba(255, 99, 132, 0.2)'],
+          backgroundColor: ['rgba(255, 99, 132, 1)'],
           borderColor: ['rgba(153, 102, 255, 1)'],
+          borderWidth: 1,
+        },
+        {
+          label: 'Northen Hemisphere Temperature in °C°',
+          data: data.northern,
+          fill: false,
+          backgroundColor: ['rgba(99, 132, 255, 1)'],
+          borderColor: ['rgba(99, 132, 255, 1)'],
+          borderWidth: 1,
+        },
+        {
+          label: 'Souther Hemisphere in °C°',
+          data: data.southern,
+          fill: false,
+          backgroundColor: ['rgba(99, 255, 132, 1)'],
+          borderColor: ['rgba(99, 255, 132, 1)'],
           borderWidth: 1,
         },
       ],
@@ -32,8 +48,10 @@ async function charIt() {
 }
 
 async function parseCSV() {
-  const xs = [];
-  const ys = [];
+  const years = [];
+  const temps = [];
+  const northern = [];
+  const southern = [];
 
   const response = await fetch('CSV/ZonAnn.Ts+dSST.csv');
   const data = await response.text();
@@ -44,10 +62,14 @@ async function parseCSV() {
   table.forEach((row) => {
     const col = row.split(',');
     const year = col[0];
-    xs.push(year);
+    years.push(year);
     const temp = col[1];
-    ys.push(Number(temp) + 14);
+    temps.push(Number(temp) + 14);
+    const north = col[2];
+    northern.push(Number(north) + 14);
+    const south = col[3];
+    southern.push(Number(south) + 14);
   });
-  return { xs, ys };
+  return { years, temps, northern, southern };
 }
 charIt();
