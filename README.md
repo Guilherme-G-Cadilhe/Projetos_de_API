@@ -16,14 +16,15 @@
 
 ---
 
-### 1- 🏷️ Fetching and Graphing Tabular Data
+### 1- ⚙️ Fetching and Graphing Tabular Data
 
-<img width="480" src="https://i.imgur.com/3xWIHWZ.png"> 
+<img width="480" src="https://i.imgur.com/tv1SrN9.png"> 
 
 > **FILE:** <i>03_FetchNGraphCSVFile</i> <br>
 > **SRC DATA:** <i>https://data.giss.nasa.gov/gistemp/</i> <br>
 - **Description:** Downloading a **CSV Tabular Data** of the **<i>"Combined Global Land-Surface Air and Sea-Surface Water Temperature"</i>** changes from 1880 until 2020 from **NASA**, and manually <i>Parsing</i> the <i>Data</i> after fetching it.<br> 
-**Charting the Data into a Canvas in HTML5 with Chart.js** library and then customizing a little.<br><br>
+**Charting the Data into a Canvas in HTML5 with Chart.js** library and then customizing a little.<br>
+**Shows the Global, Northen Hemisphere and Souther Hemisphere Temperature in Celsius**<br><br>
 - **Used:** <i>JavaScript, Canvas.js, HTML</i>.
   
 
