@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetch JSON from API and map latitude and longitude</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <style type="text/css">
+      #issMap {
+        height: 380px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--src: https://wheretheiss.at/ -->
+    <h1>Where is the ISS?</h1>
+    <p>
+      Latitude: <span id="lat"></span>°<br />
+      Longitude: <span id="lon"></span>°
+    </p>
+    <div id="issMap"></div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
