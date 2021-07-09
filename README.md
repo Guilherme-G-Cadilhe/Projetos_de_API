@@ -15,6 +15,18 @@
 </p>
 
 ---
+### 3- ⚙️ Consuming API
+
+<img width="480" src="https://i.imgur.com/F4e4jRL.png"> 
+
+> **FILE:** <i>06_Consuming-API</i> <br>
+> **SRC DATA:** <i>https://jsonplaceholder.typicode.com/users</i> <br>
+- **Description:** Fetching a online external API **<i>JSONPlaceholder</i>** and <i>Creating a List with the Data.</i><br> 
+Fetching Data for the **Client** from the local **Server** running with **Express. Using CORS** to allow the GET methods and **AXIOS** to Fetch **Data from a external API** from the **JsonPlaceholder website** and sending this **Data to the Client** and showing it in a List in the HTML<br><br>
+- **Used:** <i>JavaScript, CSS, Express, NodeJS, CORS, AXIOS</i>.
+  
+
+---
 ### 2- ⚙️ Fetching ISS Location in a Map
 
 <img width="480" src="https://media.giphy.com/media/fBFmVYX533ihN8Tb6G/giphy.gif"> 
