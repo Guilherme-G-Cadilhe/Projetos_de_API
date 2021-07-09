@@ -1,0 +1,26 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background: rgb(188, 243, 245);
+}
+
+main {
+  padding: 1px 30px;
+  margin: 0 auto;
+  background: rgb(253, 253, 253);
+  width: 50%;
+}
+div {
+  text-align: center;
+  margin: 0 auto;
+  background: rgb(255, 255, 255);
+  width: 56%;
+}
+li {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border-top: 1px solid;
+  font-size: 20px;
+}
