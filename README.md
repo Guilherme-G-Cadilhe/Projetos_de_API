@@ -35,7 +35,7 @@ Fetching Data for the **Client** from the local **Server** running with **Expres
 > **SRC DATA:** <i>https://wheretheiss.at/</i> <br>
 - **Description:** Fetching a online **<i>API of the ISS location</i>** and <i>using **Leaflet.JS** to create a Map.</i><br> 
 Showing in real time the <i>ISS location based on **Longitude and Latitude that Refreshes every Second its position**.</i><br><br>
-- **Used:** <i>JavaScript, Canvas.js, HTML</i>.
+- **Used:** <i>JavaScript, Leaflet.Js, HTML</i>.
   
 ---
 
