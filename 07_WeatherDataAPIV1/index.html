@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherDataAPI Version 1</title>
+    <script src="https://kit.fontawesome.com/53ca663091.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--
+      Sources:
+      Weather - https://openweathermap.org/
+      Geo Localization - https://opencagedata.com/
+    -->
+    <div class="card">
+      <div class="search">
+        <input type="text" class="search_bar" placeholder="Search" />
+        <button><i class="fas fa-search"></i></button>
+      </div>
+      <div class="weather loading">
+        <h2 class="city">Weather in Brasil</h2>
+        <h1 class="temp">23&deg;C</h1>
+        <div class="flex">
+          <img src="" alt="" class="icon" />
+          <div class="description">Cloudy</div>
+        </div>
+        <div class="humidity">Humidity: 60%</div>
+        <div class="wind">Wind speed: 6,2 km/h</div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
