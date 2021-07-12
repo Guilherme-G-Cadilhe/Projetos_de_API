@@ -15,6 +15,19 @@
 </p>
 
 ---
+### 4- ⚙️ WeatherDataAPI V1
+
+<img width="480" src="07_WeatherDataAPIV1/Githubmedia/WeatherAPI.gif"> 
+
+> **FILE:** <i>07_WeatherDataAPIV1</i> <br>
+> **SRC Weather DATA:** <i>https://openweathermap.org/</i> <br>
+> **SRC Reverse Geolocalization DATA:** <i>https://opencagedata.com/</i> <br>
+- **Description:** Using the **Search Input Value** to Fetch the **OpenWeather API** and show the **Weather of different locations** with the <i>Search Query</i><br> 
+Showing in real time the **User location** based on Longitude and Latitude every time the website loads by using the **Native Navigator Geolocation** and the **OpenCage Reverse Geolocalization API** to get the <i>user's city</i><br><br>
+- **Used:** <i>JavaScript, CSS, HTML</i>.
+
+
+---
 ### 3- ⚙️ Consuming API
 
 <img width="480" src="https://i.imgur.com/F4e4jRL.png"> 
@@ -23,7 +36,7 @@
 > **SRC DATA:** <i>https://jsonplaceholder.typicode.com/users</i> <br>
 - **Description:** Fetching a online external API **<i>JSONPlaceholder</i>** and <i>Creating a List with the Data.</i><br> 
 Fetching Data for the **Client** from the local **Server** running with **Express. Using CORS** to allow the GET methods and **AXIOS** to Fetch **Data from a external API** from the **JsonPlaceholder website** and sending this **Data to the Client** and showing it in a List in the HTML<br><br>
-- **Used:** <i>JavaScript, CSS, Express, NodeJS, CORS, AXIOS</i>.
+- **Used:** <i>JavaScript, Express, NodeJS, CORS, AXIOS, CSS, HTML</i>.
   
 
 ---
