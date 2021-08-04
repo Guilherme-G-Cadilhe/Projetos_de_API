@@ -1,0 +1,13 @@
+{
+  "name": "09_Fetch_API_W_CRUD",
+  "version": "1.0.0",
+  "description": "Junção de dois projetos, para fazer API de conversa entre diferentes serviços",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Bobnini",
+  "license": "MIT"
+}

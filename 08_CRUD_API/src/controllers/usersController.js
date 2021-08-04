@@ -25,7 +25,7 @@ const usersController = {
     //---- Forma Resumida de adicionar usuários-----
     users.push({ ...user, id: uuidv4() });
 
-    res.send(`Úsuario com o nome: [${user.firstName}] enviado com sucesso!`);
+    res.send(`Úsuario com o nome: [${user.fullName}] enviado com sucesso!`);
   },
   getSingleUser(req, res) {
     const { id } = req.params; //Tira o 'users/:id'(número) dos paramêtros da página para ser o id
@@ -54,13 +54,13 @@ const usersController = {
     }
 
     const { id } = req.params; //Pega o id pelo paramêtro da URL
-    const { firstName, lastName, age } = req.body; //Pega os dados enviados do site
+    const { fullName, age, body } = req.body; //Pega os dados enviados do site
     const userToUpdate = users.find((user) => user.id === id); //Pega o usuario pelo id
 
-    if (firstName) userToUpdate.firstName = firstName;
+    if (fullName) userToUpdate.fullName = fullName;
     // Muda para a propriedade Atualizada recebida pelo req.body
-    if (lastName) userToUpdate.lastName = lastName;
     if (age) userToUpdate.age = age;
+    if (body) userToUpdate.body = body;
 
     if (!userToUpdate) return res.status(404).send("Not Found 404"); //Error 404
 

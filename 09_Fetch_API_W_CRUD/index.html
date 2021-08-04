@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; form-action 'self'; style-src *; img-src 'self' data:; font-src https://fonts.gstatic.com/; connect-src https://jsonplaceholder.typicode.com/ http://localhost:3000/;"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+
+    <title>Fetch API Integrado para o projeto CRUD anterior</title>
+    <!-- Interage com o servidor de 08_CRUD_API-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="row mt-3">
+        <div class="col-md-6">
+          <h3>Criar Pessoas</h3>
+          <form class="add-post-form">
+            <div class="form-group">
+              <label for="name">Nome</label>
+              <input type="text" class="form-control" id="name-value" placeholder="Min 2 , Max 30, Sem números, pode - e '" />
+            </div>
+            <div class="form-group">
+              <label for="age">Idade</label>
+              <input type="text" class="form-control" id="age-value" placeholder='Acima de 0 e Abaixo de 100' />
+            </div>
+            <div class="form-group">
+              <label for="body">Descrição</label>
+              <textarea class="form-control" id="body-value" placeholder="Descrição sobre a pessoa e cargo de atuação"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Add Pessoa</button>
+          </form>
+        </div>
+      </div>
+      <div class="posts-list row">
+        <div class="card mt-4 col-md-6 bg-light">
+          <div class="card-body">
+            <h5 class="card-title">Nome</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Idade</h6>
+            <p class="card-text">
+              Descrição sobre a pessoa e cargo de atuação
+            </p>
+            <a href="#" class="card-link">Editar</a>
+            <a href="#" class="card-link">Deletar</a>
+          </div>
+        </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
