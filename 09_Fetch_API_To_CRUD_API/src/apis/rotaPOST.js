@@ -1,4 +1,4 @@
-// --- Variáveis
+// --- Campos contendo os valores atuais
 const nameValue = document.getElementById("name-value");
 const ageValue = document.getElementById("age-value");
 const bodyValue = document.getElementById("body-value");
@@ -26,6 +26,5 @@ export default async function enviarUsuario() {
   } catch (error) {
     console.error(error);
     console.log(`Por favor preencha os campos corretamente`);
-    alert(`Erro: Preencha os campos corretamente`);
   }
 }

@@ -10,5 +10,7 @@ routes.get("/users/:id", usersController.getSingleUser); // '/users/2' => req.pa
 routes.post("/users", usersController.createUser); // Cria um usuário
 routes.delete("/users/:id", usersController.deleteUser); // Deleta por ID o usuário
 routes.patch("/users/:id", usersController.updateUser); //Atualiza parcialmente os dados
+routes.put("/users/:id", usersController.updateUser); //Atualiza totalmente os dados
+// PUT e PATCH são da mesma coisa, só muda a nomeclatura da rota
 
 export { routes };

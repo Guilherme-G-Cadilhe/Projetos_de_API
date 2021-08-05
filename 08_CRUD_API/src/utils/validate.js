@@ -4,7 +4,7 @@ import Joi from "joi"; // Biblioteca de validação de Dados
 const modeloValidacao = Joi.object({
   // Cria o Esquema de Validação
   fullName: Joi.string()
-    .regex(/^[A-Za-z][A-Za-z\'\-]+$/i) // Validação
+    .regex(/^[^0-9]+$/) // Validação
     .min(2)
     .max(30)
     .required()
