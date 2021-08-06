@@ -1,0 +1,62 @@
+<!-- Form handling-->
+<form action="/api/users" method="POST" id="add_user">
+  <div class="new_user">
+    <div class="form-group">
+      <label for="name" class="text-medium">Nome </label>
+      <input type="hidden" name="id" value="" />
+      <input
+        type="text"
+        name="name"
+        id="name"
+        value=""
+        placeholder="Guilherme Cadilhe"
+      />
+    </div>
+    <div class="form-group">
+      <label for="email" class="text-medium">Email </label>
+      <input
+        type="text"
+        name="email"
+        id="email"
+        value=""
+        placeholder="exemplo@gmail.com"
+      />
+    </div>
+    <div class="form-group">
+      <label for="profissao" class="text-medium">Profissão </label>
+      <input
+        type="text"
+        name="profissao"
+        id="profissao"
+        value=""
+        placeholder="Desenvolvedor I"
+      />
+    </div>
+    <div class="form-group">
+      <label for="gender" class="text-medium">Género </label>
+      <div class="radio inline">
+        <input type="radio" id="radio-2" name="gender" value="Homem" />
+        <label for="radio-2" class="radio-label">Homem</label>
+      </div>
+      <div class="radio inline">
+        <input type="radio" id="radio-3" name="gender" value="Mulher" />
+        <label for="radio-3" class="radio-label">Mulher</label>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="status" class="text-medium">Status </label>
+      <div class="radio inline">
+        <input type="radio" id="radio-4" name="status" value="Ativo" />
+        <label for="radio-4" class="radio-label">Ativo</label>
+      </div>
+      <div class="radio inline">
+        <input type="radio" id="radio-5" name="status" value="Inativo" />
+        <label for="radio-5" class="radio-label">Inativo</label>
+      </div>
+    </div>
+    <div class="form-group">
+      <button type="submit" class="btn text-dark update">Salvar</button>
+    </div>
+  </div>
+</form>
+<!-- /Form handling-->

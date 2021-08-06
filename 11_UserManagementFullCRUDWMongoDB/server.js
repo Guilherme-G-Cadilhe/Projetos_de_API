@@ -4,6 +4,7 @@ const express = require("express"); // Server
 const cors = require("cors"); // Habilita navegação CORS
 const morgan = require("morgan"); // HTTP request logger
 const path = require("path"); // pra pastas com caminho de EJS diferentes da "Views"
+const connectDB = require("./server/database/connection"); // Conexão do MongoDB
 
 // Configurando o .ENV
 dotenv.config({ path: "config.env" });
@@ -25,17 +26,17 @@ app.use("/js", express.static(path.resolve(__dirname, "assets/js")));
 // Log requests
 app.use(morgan("tiny"));
 
+// MongoDB Connection
+connectDB();
+
 // Seta o View Engine
 app.set("view engine", "ejs");
 //app.set("views",path.resolve(__dirname,"views/pastaComEJSdentroDoViews"))
 // Caso você coloque os EJS em uma pasta diferente do padrão view
 // é necessario especificar o caminho dessa forma /\ ( acima )
 
-//---- Rotas ----
-app.get("/", (req, res) => {
-  console.log("Estou aqui!");
-  res.render("index");
-});
+//---- Carrega Rotas ----
+app.use("/", require("./server/routes/router"));
 
 // =--- Servidor ---=
 app.listen(PORT, () => console.log(`Escutando em http://localhost:${PORT}`));
